@@ -57,3 +57,21 @@
     flex-direction: column;
   }
 }
+@media (max-width: 375px) {
+  .wrapper {
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "content"; 
+  }
+
+  nav {
+    display: none; 
+  }
+
+  .side,
+  .main-head,
+  .ad,
+  .main-footer {
+    display: none; 
+  }
+}
